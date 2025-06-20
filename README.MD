@@ -48,6 +48,18 @@ This project is a Python graphical interface (GUI) for `wupclient`, allowing you
 - **Delete Folder**: deletes a selected folder. If you type `ALL` when confirming, it deletes recursively (including non-empty folders).
   - **Recursive Delete**: By typing `ALL` during confirmation, the deletion will be performed recursively, removing all files and subfolders.
 
+## Common commands for CLI:
+- w.ls(): Lists contents of a directory.
+- w.dl("filename"): Downloads a file.
+- w.dldir("path"): Download a directory.
+- w.cp("source","desination"): Copies a file.
+- w.mkdir("path","flags"): Creates a directory.
+- w.cd("path"): Changes the current working directory.
+- w.pwd(): Print the current directory.
+- w.up("filename"): Uploads a file.
+- w.rm("filename"): Removes a file.
+- w.rmdir("path"): Removes a directory.
+
 ## Notes
 
 - The app only works with Python 2.7 due to dependencies on the older Tkinter and syntax.
