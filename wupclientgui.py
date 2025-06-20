@@ -72,7 +72,7 @@ class Application(tk.Frame):
         self.l = Label(master, text="Current Directory: None (hit connect above)")
         self.l.pack()
         
-        self.l2 = Label(master, text="Double click an entry above to go into the folder.\nRight click an entry above to download its contents.\n\nCredits to Smea, FIX94, CreeperMario,\nMaschell, rw-r-r_0644, and vgmoose.")
+        self.l2 = Label(master, text="Double click an entry above to go into the folder.\nRight click an entry above to download its contents.\n\nCredits to Smea, FIX94, CreeperMario,\nMaschell, rw-r-r_0644, vgmoose, and KaioPiola.")
         self.l2.pack(side=tk.BOTTOM)
 
         

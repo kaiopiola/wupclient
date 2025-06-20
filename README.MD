@@ -1,63 +1,64 @@
 # WupClient GUI Mod
 
-## Novidades / Melhorias
+## What's New / Improvements
 
-- **Delete Recursivo**: Agora é possível apagar pastas e todo o seu conteúdo (inclusive subpastas e arquivos) de forma recursiva diretamente pela interface. Basta selecionar a pasta e, ao confirmar a exclusão, digitar `ALL` para que a remoção seja feita de forma completa, mesmo para pastas não vazias.
-- Outras melhorias de usabilidade e compatibilidade.
+- **Recursive Delete**: Now it's possible to delete folders and all their contents (including subfolders and files) recursively directly through the interface. Simply select the folder and, when confirming deletion, type `ALL` for complete removal, even for non-empty folders.
+- Other usability and compatibility improvements.
 
-## Sobre
+## About
 
-Este projeto é uma interface gráfica (GUI) em Python para o `wupclient`, permitindo explorar, transferir, instalar e gerenciar arquivos do Wii U remotamente via rede. Baseado em scripts clássicos da comunidade homebrew, com melhorias para uso moderno.
+This project is a Python graphical interface (GUI) for `wupclient`, allowing you to explore, transfer, install and manage Wii U files remotely over the network. Based on classic homebrew community scripts, with improvements for modern use.
 
-## Requisitos
+## Requirements
 
-- **Wii U** com wupserver (fw.img) rodando
-- **Python 2.7** (não funciona em Python 3)
-  - Baixe em: https://www.python.org/downloads/release/python-2718/
-- Windows (recomendado)
+- **Wii U** with wupserver (fw.img) running
+- **Python 2.7** (doesn't work with Python 3)
+  - Download at: https://www.python.org/downloads/release/python-2718/
+- Windows (recommended)
 
-## Instalação do Python 2.7
+## Python 2.7 Installation
 
-1. Baixe o instalador do Python 2.7: [Python 2.7.18 Windows x86-64 MSI installer](https://www.python.org/ftp/python/2.7.18/python-2.7.18.amd64.msi)
-2. Instale normalmente, marcando a opção para instalar o Tcl/Tk (Tkinter).
-3. (Opcional) Adicione `C:\Python27` ao PATH do Windows.
+1. Download the Python 2.7 installer: [Python 2.7.18 Windows x86-64 MSI installer](https://www.python.org/ftp/python/2.7.18/python-2.7.18.amd64.msi)
+2. Install normally, making sure to check the option to install Tcl/Tk (Tkinter).
+3. (Optional) Add `C:\Python27` to Windows PATH.
 
-## Como executar o WupClient GUI
+## How to Run WupClient GUI
 
-1. **Abra o Prompt de Comando ou PowerShell na pasta do projeto.**
-2. Execute:
+1. **Open Command Prompt or PowerShell in the project folder.**
+2. Run:
    ```
    C:\Python27\python.exe wupclientgui.py
    ```
-   ou, se Python 2.7 estiver no PATH:
+   or, if Python 2.7 is in your PATH:
    ```
    python wupclientgui.py
    ```
-3. Na interface, clique em "Connect" e digite o IP do seu Wii U (com wupserver rodando).
+3. In the interface, click "Connect" and enter your Wii U's IP address (with wupserver running).
 
-## Funções da Interface
+## Interface Functions
 
-- **Connect**: conecta ao Wii U pelo IP informado.
-- **Refresh**: atualiza a listagem do diretório atual.
-- **Mount usb / Mount odd_tickets / Unmount odd_tickets**: monta/desmonta volumes do Wii U.
-- **Download Folder**: baixa uma pasta do Wii U para o PC.
-- **Create Folder**: cria uma nova pasta no Wii U.
-- **Install Title**: instala um título a partir de uma pasta selecionada.
-- **Copy / Paste**: copia e cola arquivos entre Wii U e PC.
-- **Delete File**: apaga um arquivo selecionado.
-- **Delete Folder**: apaga uma pasta selecionada. Se digitar `ALL` na confirmação, apaga recursivamente (inclusive pastas não vazias).
-  - **Delete Recursivo**: Ao digitar `ALL` na confirmação, a exclusão será feita de forma recursiva, removendo todos os arquivos e subpastas.
+- **Connect**: connects to the Wii U using the provided IP address.
+- **Refresh**: updates the current directory listing.
+- **Mount usb / Mount odd_tickets / Unmount odd_tickets**: mounts/unmounts Wii U volumes.
+- **Download Folder**: downloads a folder from the Wii U to your PC.
+- **Create Folder**: creates a new folder on the Wii U.
+- **Install Title**: installs a title from a selected folder.
+- **Copy / Paste**: copies and pastes files between the Wii U and PC.
+- **Delete File**: deletes a selected file.
+- **Delete Folder**: deletes a selected folder. If you type `ALL` when confirming, it deletes recursively (including non-empty folders).
+  - **Recursive Delete**: By typing `ALL` during confirmation, the deletion will be performed recursively, removing all files and subfolders.
 
-## Observações
+## Notes
 
-- O app só funciona com Python 2.7 devido à dependência do Tkinter antigo e sintaxe.
-- Para deletar pastas não vazias, digite `ALL` na confirmação.
-  - Com a opção de delete recursivo, todo o conteúdo da pasta será removido permanentemente.
-- O Wii U e o PC devem estar na mesma rede.
+- The app only works with Python 2.7 due to dependencies on the older Tkinter and syntax.
+- To delete non-empty folders, type `ALL` when confirming.
+  - With the recursive delete option, all folder contents will be permanently removed.
+- The Wii U and PC must be on the same network.
+- The script was NOT originally written by me, I am just including necessary improvements in this repo!
 
-## Créditos
-- Smea, FIX94, CreeperMario, Maschell, rw-r-r_0644, vgmoose e comunidade homebrew Wii U.
+## Credits
+- Smea, FIX94, CreeperMario, Maschell, rw-r-r_0644, vgmoose, KaioPiola and the Wii U homebrew community.
 
 ---
 
-Se encontrar bugs ou quiser contribuir, abra uma issue ou envie um pull request!
+If you find bugs or want to contribute, please open an issue or send a pull request!
