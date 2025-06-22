@@ -48,6 +48,20 @@ Este projeto é uma interface gráfica (GUI) em Python para o `wupclient`, permi
 - **Delete Folder**: apaga uma pasta selecionada. Se digitar `ALL` na confirmação, apaga recursivamente (inclusive pastas não vazias).
   - **Delete Recursivo**: Ao digitar `ALL` na confirmação, a exclusão será feita de forma recursiva, removendo todos os arquivos e subpastas.
 
+## Comandos para CLI
+
+- w.ls(): Lista o conteúdo de um diretório.  
+- w.dl("nome_do_arquivo"): Baixa um arquivo.  
+- w.dldir("caminho"): Baixa um diretório.  
+- w.cp("origem", "destino"): Copia um arquivo.  
+- w.mkdir("caminho", "flags"): Cria um diretório.  
+- w.cd("caminho"): Altera o diretório atual.  
+- w.pwd(): Exibe o diretório atual.  
+- w.up("nome_do_arquivo"): Envia (faz upload de) um arquivo.  
+- w.rm("nome_do_arquivo"): Remove um arquivo.  
+- w.rmdir("caminho"): Remove um diretório.  
+
+
 ## Observações
 
 - O app só funciona com Python 2.7 devido à dependência do Tkinter antigo e sintaxe.
